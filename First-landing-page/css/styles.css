@@ -1,0 +1,224 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  height: 3700px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+    height: 3000px;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 3300px;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  background-image: url(/Pictures/Countryside.jpg);
+  display: flex;
+  justify-content: center;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+}
+header div h1 {
+  height: 300px;
+  width: 300px;
+  align-self: center;
+  text-align: center;
+  margin-top: 10rem;
+  color: black;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.719);
+}
+header .formulario {
+  height: 250px;
+  width: 300px;
+  background-color: black;
+  color: white;
+}
+@media (min-width: 1200px) {
+  header .formulario {
+    height: 250px;
+    width: 400px;
+    background-color: black;
+    color: white;
+  }
+}
+header .formulario form {
+  align-self: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Sans Serif", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.719);
+}
+header .formulario button {
+  align-self: center;
+  width: 200px;
+  margin-top: 1rem;
+}
+
+section {
+  height: 2700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #05151d;
+}
+@media (min-width: 1200px) {
+  section {
+    height: 2300px;
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+section .contenedorImagenes {
+  display: none;
+}
+@media (min-width: 1200px) {
+  section .contenedorImagenes {
+    height: 350px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+  section .contenedorImagenes div {
+    height: 250px;
+    width: auto;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  section .contenedorImagenes div img {
+    width: 300px;
+    height: 200px;
+  }
+  section .contenedorImagenes div h3 {
+    color: rgba(255, 255, 255, 0.719);
+    align-self: center;
+  }
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  height: 800px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  section div {
+    height: 500px;
+    width: auto;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
+}
+section div .description {
+  height: 300px;
+  width: auto;
+  display: flex;
+}
+@media (min-width: 1200px) {
+  section div .description {
+    height: 300px;
+    width: 600px;
+    flex-direction: column;
+  }
+}
+section div img {
+  height: 400px;
+  width: 300px;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+section div h2 {
+  height: 150px;
+  width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.719);
+}
+@media (min-width: 1200px) {
+  section div h2 {
+    height: 400px;
+    width: 600px;
+    align-self: flex-start;
+  }
+}
+section div button {
+  margin-top: 2rem;
+}
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+section article p {
+  height: 200px;
+  width: 400px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Sans Serif", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.719);
+}
+
+footer {
+  height: 300px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+}
+footer h2 {
+  margin-left: 1rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 1200px) {
+  footer ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+footer ul img {
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */

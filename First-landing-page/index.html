@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/Pictures/class-03.ico">
+    <link rel="stylesheet" href="sass/styles.css">
+    <title>Be prepared</title>
+</head>
+<body>
+    <main>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">Logo</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MenuNavegacion">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item"> 
+                                <a href="#description1" class="nav-link">Experiencia Andina</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#description2" class="nav-link">Experiencia Pampeana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#description3" class="nav-link">Pueblos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#footer" class="nav-link">Contact</a>
+                            </li>                            
+                        </ul>
+                    </div>                               
+                </div>
+            </nav>
+        </div>
+        <header>
+            <div>
+                <h1> Be Prepared For Living <br> The Countryside!</h1>
+                <button type="button" class="btn btn-light" id="getStarted">
+                    <a href="#description1">Get Started</a>
+                </button> 
+                <div id="cartWrapper"></div>
+                <div id="totalProducts"></div>
+                <div id="totalItems"></div>
+                <!--<div class="formulario">
+                    <form action="./form-result.php" method="POST" target="_self">
+                        <label for="login"></label> <input type="text" name="login" placeholder="E-mail"><br><br>
+                        <label for="password"></label> <input type="password" name="password" placeholder="Introduce la clave">
+                    </form>
+                    <button type="button" class="btn btn-light">Iniciar Sesión</button>
+                    <button type="button" class="btn btn-light">
+                    <a href="/sass/newacount.html">Crear nueva cuenta</a>
+                    </button>
+                </div> -->    
+                <button type="button" class="btn btn-light" id="getFinished">
+                    <a href="">Finish</a>
+                </button>  
+            </div>
+        </header>
+        <section>
+            <div class="contenedorImagenes">
+                <div><img src="https://media.istockphoto.com/photos/modern-tools-for-a-modern-farmer-picture-id1224223390?b=1&k=6&m=1224223390&s=170667a&w=0&h=tdO3f7fh6OsFJ2JBkNUX7NPEaCYlMZtvH0VyUrubDTU=" alt="Host">
+                <h3>Be a Host</h3>
+                </div>
+                <div>
+                <img src="https://img.freepik.com/foto-gratis/foto-recortada-mujer-irreconocible-vestido-pie-medio-pradera-verano-hermosas-flores-lavanda-violeta-claro-gente-naturaleza-viajes-flores-silvestres-campo-zona-rural_343059-717.jpg?size=626&ext=jpg&ga=GA1.2.617208281.1612915200" alt="Guest">
+                <h3>Be a Guest</h3>
+                </div>
+                <div>
+                <img src="https://elviajero.elpais.com/elviajero/imagenes/2019/06/26/actualidad/1561563544_509589_1561565715_sumario_grande.jpg" alt="International">
+                <h3>Be a Survivor</h3>
+                </div>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/31/85/7a/31857aa010ba7c3b651e0fbd866aae19.jpg" alt="Campo1">
+                <div class="description">
+                    <a href="description1" id="description1"></a>
+                    <h2>Entre montañas</h2>
+                    <article>
+                    <p>Animate a escalar lo imposible, a desafiar tu vértigo a las alturas, durmiendo en campamentos que acarician las estrellas</p>
+                    <button type="button" class="btn btn-light" onclick= "addProduct('Montañas',1500,1, 'https://i.pinimg.com/originals/31/85/7a/31857aa010ba7c3b651e0fbd866aae19.jpg')">
+                        <a href="#MenuNavegacion">Descubrí</a>    
+                    </button>
+                    </article>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.wallpapersafari.com/17/10/MvnSQg.jpg" alt="Img-02">
+                <div class="description">
+                <a href="description2" id="description2"></a>
+                <h2>Descubrí los <br> verdaderos campos</h2>
+                <article>
+                    <p>
+                        Visita los campos más inhospitos, volvé a descubrir el aire fresco y a sentir la verdadera furia de los climas pampeanos
+                    </p>
+                    <button type="button" class="btn btn-light"onclick= "addProduct('Campos',3000,1, 'https://cdn.wallpapersafari.com/17/10/MvnSQg.jpg')">
+                        <a href="#MenuNavegacion">Descubrí</a>
+                    </button>
+                </article>
+                </div>
+            </div>
+            <div>
+                <img src="https://wallpaperaccess.com/full/504983.jpg" alt="Img-03">
+                <div class="description">
+                    <a href="description3" id="description3"></a>
+                    <h2>Pueblos abandonados</h2>
+                    <article>
+                    <p>Recorré aquellos pueblos olvidados, donde la naturaleza arrazó con la civilización. Dormí en lugares que alguna vez fueron un hogar, y fotografiá las verdaderas ciudades fantasmas</p>
+                    <button type="button" class="btn btn-light" onclick= "addProduct('Acantilados',1000,1, 'https://wallpaperaccess.com/full/504983.jpg')">
+                        <a href="#MenuNavegacion">Descubrí</a> 
+                    </button>
+                    </article>
+                </div>
+            </div>           
+        </section>
+        <footer>
+            <h2>More on the blog</h2>
+            <a href="footer" id="footer"></a>
+            <ul>
+                <a href="www.google.com">About Logo</a>
+                <a href="">Contribution</a>
+                <a href="">Write for us</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+            </ul>
+            <ul>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    <span>@Rent.a.House</span>
+                </li>
+                <li>
+                    <img src="https://image.similarpng.com/very-thumbnail/2020/05/Glossy-Instagram-logo-PNG.png" alt="Instagram">
+                    <span>@Rent.a.Countryside</span>
+                </li>
+                <li>
+                    <img src="https://i.pinimg.com/236x/ee/4b/ec/ee4bec98e284c251b885707a470ad3b8.jpg" alt="Twitter">
+                    <span>/Rent.a.Countryside</span>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </main>
+    <script src="./project.js"></script>
+</body>
+</html>
